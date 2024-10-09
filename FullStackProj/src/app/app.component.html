@@ -1,0 +1,11 @@
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd">
+    <a class="navbar-brand" routerLink="">Full Stack Project</a>
+
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ms-auto">
+            <a class="nav-item nav-link active" routerLinkActive="active" [routerLink]="['/courselist']">Course List</a>
+            <a class="nav-item nav-link " routerLinkActive="active" [routerLink]="['/addcourse']">Add New Course</a>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>

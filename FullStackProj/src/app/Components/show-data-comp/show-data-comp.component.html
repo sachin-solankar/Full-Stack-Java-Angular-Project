@@ -1,0 +1,24 @@
+<div class="container">
+  <h2 class="text-center">Course List</h2>
+  <table class="table table-stripped">
+      <thead>
+          <tr>
+              <th>Course Id</th>
+              <th>Course Title</th>
+              <th>Course Description </th>
+              <th>Actions</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let user of info">
+              <td> {{ user.id }} </td>
+              <td> {{ user.title }} </td>
+              <td> {{ user.description }} </td>
+              <td>
+                  <button  class="btn btn-info" [routerLink]="['/editcourse',user.id]">Update</button>&nbsp;
+                  <button class="btn btn-danger" (click)="deleteCourse(user.id)">Delete</button>
+              </td>
+          </tr>
+      </tbody>
+  </table>
+</div>
